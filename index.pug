@@ -1,47 +1,69 @@
-<!DOCTYPE html>
+doctype
 html(lang="es")
-	head
-		//- SET DE CARACTERES
-		meta(charset="UTF-8")
-		//- VIEWPORT - RESPONSIVE DESIGN
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		//- COMPATIBILIDAD CON MICROSOFT EDGE
-		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		//- NOMBRE DE LA APLICACIÓN (APP)
-		meta(name="application-name" content="")
-		//- NOMBRE DEL AUTOR
-		meta(name="author" content="Gonzalo Fleming")
-		//- DESCRIPCIÓN DEL SITIO PARA SEO
-		meta(name="description" content="")
-		//- PALABRAS CLAVE DEL SITIO PARA SEO
-		meta(name="keywords" content="")
-		//- Bootstrap Cargado desde SASS
-		//- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		//- FAVICON
-		link(rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon")
-		//- FONTAWESOME 5
-		script(src="https://kit.fontawesome.com/ac845de1ae.js" crossorigin="anonymous")
-		//- ESTILOS CSS
-		link(rel="stylesheet" href="assets/css/style.css")
-		//- TÍTULO DE LA PÁGINA
-		title Documento
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
+      meta(name="application-name", content="BarberShop")
+      meta(name="author", content="Gonzalo Fleming")
+      meta(name="description", content="Blog de barbería BarberShop")
+      meta(name="keywords", content="barbería, barba")
+      link(rel="shortcut icon", href="assets/img/favicon/favicon.ico", type="image/x-icon")
+      script(src="https://kit.fontawesome.com/ac845de1ae.js", crossorigin="anonymous")
+      link(rel="stylesheet", href="assets/css/style.css")
+      title BarberShop - Blog
 	
-	body
-      nav
+   body
+      nav.navbar.navbar-expand-lg.navbar-light
+         .container
+            a.navbar-brand(href="#")
+               img(src="assets/img/logo.png", alt="Logo Barbería")
+            
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+               span.navbar-toggler-icon
+            
+            .collapse.navbar-collapse#navbarNav
+               ul.navbar-nav.ml-auto
+                  li.nav-item: a.nav-link(href="#") Nosotros
+                  li.nav-item: a.nav-link(href="#") Trabajos
+                  li.nav-item.active: a.nav-link(href="#") Blog
+                  li.nav-item: a.nav-link(href="#") Horas
+                  li.nav-item: a.nav-link(href="#") Contacto
+      header
+         .container
+            h2 5 formas de cuidar tu corte de cabello
+         i.fas.fa-angle-double-down
 
-		header
+      main.px-4
+         article
+            section
+               p 12 de abril de 2018
+               p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolor temporibus deleniti necessitatibus reprehenderit quas, eius deserunt adipisci. Assumenda tenetur temporibus est quidem aspernatur odio id facere laborum dolorem eaque!Voluptatem minus ea qui quae cumque enim debitis iusto ipsum sequi provident, harum maiores! Amet necessitatibus laborum, odit odio deleniti labore, consequuntur libero ipsa cum doloribus ex ducimus suscipit ab.Maxime nam illo nisi, eum ex labore corrupti beatae dolorem molestias, eligendi eaque, molestiae incidunt officia esse! Facere sequi, sit iusto rem numquam odio inventore ullam, optio reprehenderit dolore saepe?Aut distinctio omnis fugit, eaque ad dolore expedita quos eius possimus tenetur voluptate! Excepturi, doloribus eos earum iste, qui adipisci, vero deleniti saepe itaque ullam nemo inventore sequi animi ex!Dolorum porro iure minima culpa repellat ratione. Odit asperiores sunt numquam vero voluptatum aliquam voluptate, veniam impedit veritatis quibusdam. Architecto fuga hic eveniet aperiam ab autem blanditiis. Ducimus, ipsum suscipit?
+               p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolor temporibus deleniti necessitatibus reprehenderit quas, eius deserunt adipisci. Assumenda tenetur temporibus est quidem aspernatur odio id facere laborum dolorem eaque!Voluptatem minus ea qui quae cumque enim debitis iusto ipsum sequi provident, harum maiores! Amet necessitatibus laborum, odit odio deleniti labore, consequuntur libero ipsa cum doloribus ex ducimus suscipit ab.Maxime nam illo nisi, eum ex labore corrupti beatae dolorem molestias, eligendi eaque, molestiae incidunt officia esse! Facere sequi, sit iusto rem numquam odio inventore ullam, optio reprehenderit dolore saepe?Aut distinctio omnis fugit, eaque ad dolore expedita quos eius possimus tenetur voluptate! Excepturi, doloribus eos earum iste, qui adipisci, vero deleniti saepe itaque ullam nemo inventore sequi animi ex!Dolorum porro iure minima culpa repellat ratione. Odit asperiores sunt numquam vero voluptatum aliquam voluptate, veniam impedit veritatis quibusdam. Architecto fuga hic eveniet aperiam ab autem blanditiis. Ducimus, ipsum suscipit?
+               p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolor temporibus deleniti necessitatibus reprehenderit quas, eius deserunt adipisci. Assumenda tenetur temporibus est quidem aspernatur odio id facere laborum dolorem eaque!Voluptatem minus ea qui quae cumque enim debitis iusto ipsum sequi provident, harum maiores! Amet necessitatibus laborum, odit odio deleniti labore, consequuntur libero ipsa cum doloribus ex ducimus suscipit ab.Maxime nam illo nisi, eum ex labore corrupti beatae dolorem molestias, eligendi eaque, molestiae incidunt officia esse! Facere sequi, sit iusto rem numquam odio inventore ullam, optio reprehenderit dolore saepe?Aut distinctio omnis fugit, eaque ad dolore expedita quos eius possimus tenetur voluptate! Excepturi, doloribus eos earum iste, qui adipisci, vero deleniti saepe itaque ullam nemo inventore sequi animi ex!Dolorum porro iure minima culpa repellat ratione. Odit asperiores sunt numquam vero voluptatum aliquam voluptate, veniam impedit veritatis quibusdam. Architecto fuga hic eveniet aperiam ab autem blanditiis. Ducimus, ipsum suscipit?
+               p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolor temporibus deleniti necessitatibus reprehenderit quas, eius deserunt adipisci. Assumenda tenetur temporibus est quidem aspernatur odio id facere laborum dolorem eaque!Voluptatem minus ea qui quae cumque enim debitis iusto ipsum sequi provident, harum maiores! Amet necessitatibus laborum, odit odio deleniti labore, consequuntur libero ipsa cum doloribus ex ducimus suscipit ab.Maxime nam illo nisi, eum ex labore corrupti beatae dolorem molestias, eligendi eaque, molestiae incidunt officia esse! Facere sequi, sit iusto rem numquam odio inventore ullam, optio reprehenderit dolore saepe?Aut distinctio omnis fugit, eaque ad dolore expedita quos eius possimus tenetur voluptate! Excepturi, doloribus eos earum iste, qui adipisci, vero deleniti saepe itaque ullam nemo inventore sequi animi ex!Dolorum porro iure minima culpa repellat ratione. Odit asperiores sunt numquam vero voluptatum aliquam voluptate, veniam impedit veritatis quibusdam. Architecto fuga hic eveniet aperiam ab autem blanditiis. Ducimus, ipsum suscipit?
+               p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolor temporibus deleniti necessitatibus reprehenderit quas, eius deserunt adipisci. Assumenda tenetur temporibus est quidem aspernatur odio id facere laborum dolorem eaque!Voluptatem minus ea qui quae cumque enim debitis iusto ipsum sequi provident, harum maiores! Amet necessitatibus laborum, odit odio deleniti labore, consequuntur libero ipsa cum doloribus ex ducimus suscipit ab.Maxime nam illo nisi, eum ex labore corrupti beatae dolorem molestias, eligendi eaque, molestiae incidunt officia esse! Facere sequi, sit iusto rem numquam odio inventore ullam, optio reprehenderit dolore saepe?Aut distinctio omnis fugit, eaque ad dolore expedita quos eius possimus tenetur voluptate! Excepturi, doloribus eos earum iste, qui adipisci, vero deleniti saepe itaque ullam nemo inventore sequi animi ex!Dolorum porro iure minima culpa repellat ratione. Odit asperiores sunt numquam vero voluptatum aliquam voluptate, veniam impedit veritatis quibusdam. Architecto fuga hic eveniet aperiam ab autem blanditiis. Ducimus, ipsum suscipit?
+               button.btn.btn-dark(type="button") Compartir
+               button.btn.btn-dark(type="button") Comentar en Twitter
+            section
+               img(src="assets/img/naomi-thai.png", alt="Autor")
+               p Naomi Thai
+               p @Naothai
+               p: a(href="https://depelos.com") depelos.com
+               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni consequatur! Accusamus labore adipisci sed inventore quo deleniti ipsam nam veritatis amet quam, perferendis eius, impedit, aperiam est rem commodi.Corporis, placeat non. Odio, nisi quod error ex fuga quasi alias? Iste quibusdam quasi saepe totam, recusandae, esse eius, quos quae culpa nesciunt aliquam atque. Minima aspernatur mollitia tempora reiciendis!Temporibus, itaque ut. Aliquam, pariatur similique? Explicabo, reprehenderit cum officiis hic corporis quam aliquam officia sint totam vel aperiam? Maiores repudiandae veniam assumenda doloribus, dolore deserunt ex officia architecto eum.
+            section
+               nav(aria-label="")
+                  ul.pagination
+                     li.page-item: a.page-link(href="#") Anterior
+                     li.page-item: a.page-link(href="#") 1
+                     li.page-item: a.page-link(href="#") 2
+                     li.page-item: a.page-link(href="#") 3
+                     li.page-item: a.page-link(href="#") Siguiente
 
-		main
-		
-		aside
+      footer
+         img(src="assets/img/logo.png", alt="Logo Barbería")
 
-		footer
-
-		//- JQUERY 3.4.1 - MINIFICADO
-		script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-		//- POPPER-JS de BOOTSTRAP
-		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxnpm fundMfooAo" crossorigin="anonymous")
-		//- JS de BOOTSTRAP 4.4.1
-		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
-		//- JS del PROYECTO
-		script(src="assets/js/script.js")
+      script(src="https://code.jquery.com/jquery-3.4.1.min.js", integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=", crossorigin="anonymous")
+      script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+      script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
+      script(src="assets/js/script.js")
