@@ -1,10 +1,45 @@
-.navbar-nav
+nav.navbar
 {
-   .nav-item
+   padding-top: 1.68rem;
+   padding-bottom: 1.68rem;
+
+   ul.navbar-nav
    {
-      .nav-link
+      & li.nav-item
       {
-         color: $white;
+         &.active
+         {
+            color: $pink-ruddy;
+            & .nav-link
+            {
+               color: $pink-ruddy;
+            }
+         }
+         & a.nav-link
+         {
+            color: $white;
+            padding-right: 1rem;
+            padding-left: 1rem;
+         }
       }
    }
+
+
+
+
+
+
+   .navbar-brand
+   {
+      img
+      {
+         width: 4.89rem;
+      }
+   }
+}
+
+
+.bg-eeire
+{
+   background-color: $black-eerie;
 }
