@@ -1,7 +1,23 @@
 @import 'reset';
 @import 'typography';
 
-.text-white
+
+html
 {
-   color: $white;
+   scroll-behavior: smooth;
+}
+
+a
+{
+   color: inherit;
+   &:hover
+   {
+      text-decoration: none;
+      color: $pink-ruddy !important;
+   }
+}
+
+:target
+{
+   padding-top: $pt-scroll;
 }

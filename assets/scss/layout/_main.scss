@@ -1,0 +1,87 @@
+.post
+{
+   font-family: $ff-roboto;
+   font-size: $fs-medium;
+   font-weight: $fw-light;
+   line-height: 45px;
+   letter-spacing: 35;
+   color: $btn-bg-c;
+   
+   hr
+   {
+      position: absolute;
+      left: 0;
+      right: 0;
+   }
+   &-text
+   {
+      &-date
+      {
+         font-family: $ff-playfair;
+         font-size: $fs-large;
+         font-weight: $fw-regular;
+      }
+      & .btn.btn-share
+      {
+         padding: .75rem 1rem;
+         margin: 3rem 1rem 3rem 0;
+         color: $white;
+         background-color: $btn-bg-c;
+         border-radius: 25px;
+
+         &-xl
+         {
+            padding: .75rem .85rem;
+         }
+      }
+   }
+
+   & .author
+   {
+      margin: 2rem 0;
+      padding-top: 2rem;
+      display: inline-block;
+      font-size: $fs-small-author;
+
+      &-img
+      {
+         border-radius: 50%;
+      }
+      &-name
+      {
+         font-family: $ff-playfair;
+         font-size: $fs-x-large;
+         font-weight: $fw-black;
+         font-style: italic;
+         line-height: 40px;
+         letter-spacing: initial;
+         color: $black-eerie;
+      }
+      &-hash
+      {
+         font-family: $ff-roboto;
+         font-size: $fs-large-hash;
+         font-weight: $fw-light;
+         line-height: 26px;
+         letter-spacing: initial;
+         color: $pink-ruddy;
+         margin-bottom: .25rem;
+      }
+      &-web
+      {
+         font-family: $ff-roboto;
+         font-size: $fs-large-hash;
+         font-weight: $fw-light;
+         line-height: 26px;
+         letter-spacing: initial;
+         color: $pink-ruddy;
+      }
+      &-text
+      {
+         line-height: 35px;
+      }
+   }
+
+
+
+}

@@ -1,4 +1,32 @@
 header
 {
-   
+   width: 100%;
+   height: 100vh;
+   background-image: url("../img/post-image.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   position: relative;
+
+   & h2
+   {
+      position: absolute;
+      font-size: $fs-xx-large;
+      font-family: $ff-playfair;
+      font-weight: $fw-black;
+      font-style: italic;
+      line-height: 94px;
+      top: 40%;
+      right: 25%;
+      left: 25%;
+   }
+   & a
+   {
+      & i.fas.fa-angle-double-down
+      {
+         font-size: $fs-xx-large;
+         position: absolute;
+         bottom: 7.5%;
+      }
+   }
 }
